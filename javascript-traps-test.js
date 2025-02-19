@@ -17,4 +17,4 @@ setTimeout(function(){
  alors il n'est pas accessible dans le setTimeout, 
  et il n'est pas accessible dans le setInterval car il est declare dans une fonction, 
  donc undefined.
-*/
+*/ 
