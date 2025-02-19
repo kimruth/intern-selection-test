@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Fic-Comp</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Fic-Comp</div>
+        <ul class="nav-links">
+            <li><a href="accueil">Accueil</a></li>
+            <li><a href="caracteristiques">caracteristiques</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur Fic-Comp</h1>
+            <p>Des solutions innovatives pour un meilleur lendemain.</p>
+            <button class="cta-button" onclick="alert(`Merci d'avoir cliquer`)">Commencer</button>
+        </div>
+    </header>
+
+    <section id="features">
+        <h2>Nos caracteristiques</h2>
+        <div class="features-container">
+            <div class="feature-content">
+                <h3>Une performance rapide</h3>
+                <p>Nous avons conçu nos solutions pour vous offrir une expérience utilisateur rapide et fluide.</p>
+            </div>
+            <div class="feature-content">
+                <h3>Donnees sécurisées</h3>
+                <p>Nous vous garantissons une securite de pointe pour votre tranquilite d'esprit.</p>
+            </div>
+            <div class="feature-content">
+                <h3>Disponible 24h/7j</h3>
+                <p>Nous vous accordons notre disponibilite chaque fois que vous en avez besoin.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="slider">
+        <h2>Notre Gallerie</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <img id="slide-image" src="image1.jpg" alt="Image Slide">
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez nous</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Votre Nom" required>
+            <input type="email" id="email" placeholder="Votre Email" required>
+            <textarea id="message" placeholder="Votre Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

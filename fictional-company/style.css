@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ff6600;
+    color: white;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        background-color: #ddd;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+#hero {
+    background: url('robot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .hero-content {
+    padding: 20px;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#hero .hero-content .cta-button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#features {
+    padding: 20px;
+}
+
+#features .features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0px auto;
+    max-width: 800px;
+}
+
+.features-container .feature-content {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ff6600c8;
+}
+
+#slider {
+    padding: 0px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-container img {
+    width: 80%;
+    margin-bottom: 30px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+#contact {
+    padding: 50px;
+    background: #eee;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
