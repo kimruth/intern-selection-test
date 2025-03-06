@@ -1,6 +1,4 @@
-// Image Slider
-let images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"
-];
+let images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
 let currentIndex = 0;
 
 function nextSlide() {
@@ -13,7 +11,6 @@ function prevSlide() {
     document.getElementById("slide-image").src = images[currentIndex];
 }
 
-// Form Validation
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
